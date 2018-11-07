@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${HOME}/Projects/Workspaces/2019/microservices-research
+          search-paths: config-repo/*
+          force-pull: true
+management:
+  endpoints:
+    web:
+      base-path: /_manage
+      exposure:
+        include: "*"
