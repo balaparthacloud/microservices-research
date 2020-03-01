@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
     @Value("${message}")
-    public String password;
+    public String message;
 
 
     @RequestMapping("/greetings")
-    public String Display(){
-        return "Yes !!!"+ password;
+    public String getMessage(){
+        return "Yes !!!"+ this.message;
     }
 }

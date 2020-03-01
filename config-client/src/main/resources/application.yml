@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: vietnam-dev
-  cloud:
-    config:
-      uri: http://localhost:8888
+logging:
+  level:
+    ROOT: DEBUG
+    org.springframework.cloud.config: DEBUG
